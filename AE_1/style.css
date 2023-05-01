@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'Exocet Hard';
+    src: url(./fonts/films.EXH_____.ttf);
+    /*Añade las fuente ubicada en el directorio "fonts"*/
+}
+
+@font-face {
+    font-family: 'Exocet Light';
+    src: url(./fonts/films.EXL_____.ttf);
+    /*Añade las fuente ubicada en el directorio "fonts"*/
+}
+
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+
+html {
+    font-family: 'Exocet Light';
+}
+
+body {
+    margin: auto;
+    background-image: url(./img/fondo_diablo.png);
+    /*Añade la imagen de fondo ubicada en el directorio "img"*/
+    background-color: black;
+    background-size: 1600px;
+    background-position: center;
+    /*Centra la imagen de fondo*/
+    background-repeat: no-repeat;
+    /*Evita que la imagen de fondo se repita*/
+}
+
+.contenedor {
+    background-color: rgba(18, 18, 18, 0.6);
+    /*Da un color de fondo traslúcido a los elementos dentro del div "contenedor"*/
+    border: 4px solid rgb(218, 172, 100);
+    border-radius: 2px;
+    color: rgb(210, 210, 210);
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.borde {
+    border: 2px solid rgb(218, 172, 100);
+    border-radius: 2px;
+}
+
+h1,h2,h3 {
+    background-color: transparent;
+    color: rgb(218, 172, 100);
+}
+
+a {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    transition: color;
+}
+
+a:hover {
+    color: rgb(218, 172, 100);
+    text-decoration: underline;
+}
+
+#titulo {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+#titulo h1 {
+    font-family: 'Exocet Hard';
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+#posicion {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articulo {
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 4px;
+}
+
+.articulo h2 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.articulo article {
+    color: rgb(210, 210, 210);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.articulo p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#verArticulo {
+    align-self: left end;
+}
+
+#barraLateral {
+    flex: 200px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#barraLateral h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#barraLateral ul {
+    height: 120px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#barraLateral li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.imgLista {
+    margin: 2px;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+#barraInferior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+#cr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#divLogo {
+    background-image: url(./img/dia2Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 222px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#divPubli {
+    background-image: url(./img/banner_christian.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 222px;
+    margin-top: 0px;
+}
+
+/*CSS Quienes Somos*/
+
+#h2Quienes {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#pQuienes{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.divMapa {
+    margin-bottom: 10px;
+}
+
+#premapa {
+    display: flex;
+    justify-content: center;
+}
+
+#mapa {
+    display: flex;
+    height: 25%;
+    margin: auto;
+    padding: 200;
+    width: 25%;
+}
+
+/*CSS Áreas de Actuación*/
+
+.servicio {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+  }
+
+#h2Servicio {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+ .servicio h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+ }
+ 
+ .servicio p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+ }
+
+.servicio img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Boton desplegable hacia abajo menu */
+.dropbtn {
+    background-color: grey;
+    border: none;
+    color: rgb(218, 172, 100);
+    font-size: 16px;
+    padding: 16px;
+}
+
+/* posicion boton desplegable hacia abajo menu*/
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Contenido de dentro del desplegable */
+.dropdown-content {
+    background-color: grey;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Links dentro del desplegable */
+.dropdown-content a {
+    color: rgb(218, 172, 100);
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el raton por las opciones*/
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.borde-boton {
+    border: 2px solid rgb(218, 172, 100);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.servicio {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+  }
+
+#h2Servicio {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+ .servicio h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+ }
+ 
+ .servicio p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+ }
+
+.servicio img {
+    height: auto;
+    max-width: 100%;
+    }
+
+/* Adaptación de ancho fijo para resoluciones de más de 1300px de ancho */
+@media (min-width: 1301px) {
+    body {
+        width: 1300px;
+    }
+
+    nav.menuresponsive {
+        display: none;
+    }
+}
+
+/*Diseño responsive*/
+
+/* Adaptación optimizada para verse en una tablet en posición vertical */
+@media (min-width: 600px) and (max-width: 820px) and (orientation: portrait) {
+    .contenedor {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .menuresponsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    nav.menu {
+        display: none;
+    }
+}
+
+/* Adaptación optimizada para verse en una tablet en posición horizontal */
+@media (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+    .contenedor {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .menuresponsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    #posicion {
+        flex-direction: column;
+    }
+
+    .articulo {
+        margin-right: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* Adaptación optimizada para verse en un teléfono en posición vertical */
+@media (max-width: 600px) and (orientation: portrait) {
+    .contenedor {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .menuresponsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #posicion {
+        flex-direction: column;
+    }
+
+    .articulo {
+        margin-right: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* Adaptación optimizada para verse en un teléfono en posición horizontal */
+@media (max-width: 600px) and (orientation: landscape) {
+    .contenedor {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .menuresponsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+}
